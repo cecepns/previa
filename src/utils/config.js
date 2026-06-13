@@ -2,7 +2,7 @@
  * Base URL API — diatur lewat VITE_API_URL di .env
  * Contoh: https://api.kingcreativestudio.my.id/previa/api
  */
-export const API_BASE_URL = import.meta.env.VITE_API_URL;
+export const API_BASE_URL = "https://api.kingcreativestudio.my.id/previa";
 
 if (!API_BASE_URL) {
   throw new Error(
