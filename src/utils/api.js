@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { API_BASE_URL } from './config';
 
 const TOKEN_KEY = 'previa_admin_token';
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
